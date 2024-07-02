@@ -16,6 +16,11 @@ namespace TwitchLib.PubSub.Interfaces
         /// Occurs when [on bits received].
         /// </summary>
         event EventHandler<OnBitsReceivedArgs> OnBitsReceived;
+        /// <inheritdoc />
+        /// <summary>
+        /// Occurs when [on bits received v2].
+        /// </summary>
+        event EventHandler<OnBitsReceivedV2Args> OnBitsReceivedV2;
         /// <summary>
         /// Occurs when [on channel extension broadcast].
         /// </summary>
@@ -164,6 +169,14 @@ namespace TwitchLib.PubSub.Interfaces
         /// Occurs when [on prediction].
         /// </summary>
         event EventHandler<OnPredictionArgs> OnPrediction;
+        /// <summary>
+        ///Occurs when [on automod caught message].
+        /// </summary>
+        event EventHandler<OnAutomodCaughtMessageArgs> OnAutomodCaughtMessage;
+        /// <summary>
+        /// Occurs when [on automod caught user message].
+        /// </summary>
+        event EventHandler<OnAutomodCaughtUserMessage> OnAutomodCaughtUserMessage;
 
         /// <summary>
         /// Connects this instance.
